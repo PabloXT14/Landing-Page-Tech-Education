@@ -1,0 +1,110 @@
+/* ========== Global Stylings ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --yellow: #FBC101;
+    --light-blue: #DFECF4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media  screen and (max-width: 1080px) {
+    html {
+        font-size: 93.75%;/*15px*/
+    }
+    
+}
+@media  screen and (max-width: 720px) {
+    html {
+        font-size: 87.5%;/*14px*/
+    }
+    
+}
+
+
+/* ========== Header Styling ========== */
+header {
+    width: 100%;
+    height: 4rem;
+    padding: 0 3rem;
+    box-shadow: 0 1px 5px gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--yellow);
+    color: #000;
+}
+
+header #logo {
+    font-size: 1.7rem;
+    flex-basis: 45%;
+}
+
+#logo span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+header .menu {
+    flex-basis: 55%;
+    height: 100%;
+    /* background: red; */
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    list-style: none;
+}
+
+.menu li {
+    padding: 0 2rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000;
+    font-weight: 500;
+
+    transition: all 0.15s ease;
+}
+
+.menu li a:hover {
+    color: #FFF;
+    font-weight: 900;
+}
+
+/* =========== Main Styling ========== */
+main {
+
+}
+
+main section {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section:nth-child(2) {
+    background: var(--light-blue);
+}
+
+main section:nth-child(4) {
+    color: #FFF;
+    background: #000;
+}

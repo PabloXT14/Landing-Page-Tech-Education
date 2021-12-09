@@ -9,52 +9,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia & Educação</title>
-    <!-- Fonts Awesome -->
-    <script src="https://kit.fontawesome.com/32697e770a.js" crossorigin="anonymous"></script>
+    <title>Tech Education</title>
+    <!-- Fonts Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- CSS link -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Fonts Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
-        <div id="logo">
-            <i class="fas fa-laptop-code"></i>
-            <span>Technology & Education</span>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#review">Review</a></li>
-                <li><a href="#programas">Programas</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <a href="#" class="logo">
+            <i class="fas fa-graduation-cap"></i>logo
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#teacher">teacher</a></li>
+                <li><a href="#course">course</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
+
+        <!-- Responsible Menu bar-->
+        <div class="fas fa-bars"></div>
     </header>
 
-    <main>
-        <section id="home">
-            HOME
-        </section>
 
-        <section id="review">
-            REVIEW
-        </section>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h1>learn online from home</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate veritatis quas doloribus quae
+                obcaecati a. Cupiditate eos ipsa itaque est omnis minus accusantium possimus provident ipsum, at illum,
+                assumenda distinctio?</p>
+            <a href="#"><button>discover more</button></a>
+        </div>
 
-        <section id="programas">
-            PROGRAMAS
-        </section>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>trending courses</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, earum.</p>
+            </div>
 
-        <section id="contact">
-            CONTACT
-        </section>
-    </main>
+            <div class="box">
+                <i class="fas fa-fire"></i>
+                <h3>free trial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, earum.</p>
+            </div>
 
-    <footer>
-        Made by Pablo Alan 2021 - Copyright
-    </footer>
+            <div class="box">
+                <i class="fas fa-award"></i>
+                <h3>certifications</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, earum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">about us</h2>
+        <h3 class="title">start your journey with us</h3>
+
+        <div class="row">
+            <div class="content">
+                <h3>start your journey to a better life with our pratical courses</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti architecto officia blanditiis
+                    vel, alias inventore magnam culpa neque! Modi minima maxime, ipsum aliquid expedita nam aut
+                    exercitationem ducimus tenetur!</p>
+                <a href="#"><button>learn more</button></a>
+            </div>
+
+            <div class="image">
+                <img src="./assets/about-img.svg" alt="Image Section About">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teacher Section -->
+    <section class="teacher" id="teacher">
+
+    </section>
+
+
+    <!-- JS File Link -->
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,6 @@
 
 body {
     /* background: var(--dark-gray); */
-    height: 3000px;
 }
 
 html {
@@ -99,15 +98,15 @@ header .navbar ul li a {
 
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-    /* color: var(--blue-light); */
-    color: red;
+    color: var(--blue-light);
+    /* color: red; */
 }
 
 /*Logo*/
 header .logo {
     font-size: 2.5rem;
     color: var(--blue-light);
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 header .logo i {
@@ -171,6 +170,7 @@ header .fa-times {
 
 .home .content p {
     font-size: 2rem;
+    text-transform: none;
     color: var(--text-body);
     padding: 1rem 25rem;
 }
@@ -205,7 +205,7 @@ header .fa-times {
 }
 
 .home .box-container .box {
-    height: 20rem;
+    min-height: 20rem;
     width: 25rem;
     background-color: #FFF;
     
@@ -213,6 +213,7 @@ header .fa-times {
     border-radius: 0.3rem;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
 
+    padding: 2rem 0;
     cursor: pointer;
 }
 
@@ -239,6 +240,7 @@ header .fa-times {
 
 .home .box-container .box p {
     font-size: 1.3rem;
+    text-transform: none;
     padding: 0.7rem 2rem;
     color: #666;
 }
@@ -288,6 +290,7 @@ header .fa-times {
 
 .about .row .content p {
     font-size: 1.6rem;
+    text-transform: none;
     color: #999;
     padding: 1rem 0;
 }
@@ -317,8 +320,295 @@ header .fa-times {
 
 /* ========== Teacher Styling ========== */
 .teacher {
-    height: 100vh;
-    background: green;
+    background: #f9f9f9;
+}
+
+.teacher .cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 2rem 0;
+}
+
+
+.teacher .cards-container .card {
+    padding: 2rem;
+    background: #FFF;
+    text-align: center;
+    width: 28rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.teacher .cards-container .card img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;/*define como o conteúdo de um elemento, deve ser redimensionado para caber em seu contêiner, semelhante ao background-size*/
+    filter: grayscale();
+
+    transition: filter 0.2s ease;
+}
+
+.teacher .cards-container .card:hover img {
+    filter: grayscale(0);
+}
+
+
+.teacher .cards-container .card h3 {
+    color: var(--blue);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+.teacher .cards-container .card p {
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.teacher .cards-container .card .icons a {
+    font-size: 1.9rem;
+    padding: 1.5rem .5rem;
+    color: var(--blue);
+
+    transition: all 0.2s ease;
+}
+
+.teacher .cards-container .card .icons a:hover {
+    color: var(--blue-light);
+}
+
+
+/* ========== Courses Styling ========== */
+.course .boxes-container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.course .boxes-container .box {
+    min-height: 18rem;
+    width: 25rem;
+    margin: 3.5rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    /* box-shadow: .3rem .3rem 0 .1rem var(--blue-light),
+                .5rem .5rem .5rem rgba(0,0,0,.3); */
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    transition: all 0.2s ease;
+}
+
+.course .boxes-container .box:hover {
+    transform: scale(1.04);
+}
+
+.course .boxes-container .box i {
+    height: 10rem;
+    width: 10rem;
+    line-height: 8rem;
+    text-align: center;
+    margin-top: -4rem;
+
+    font-size: 3.5rem;
+    color: #FFF;
+    background: var(--blue);
+
+    border-radius: 50%;
+    border: 1rem solid #FFF;
+    border-left: 1rem solid var(--blue);
+    border-right: 1rem solid var(--blue);
+
+    box-shadow: 0 0 0 1rem #FFF inset;
+}
+
+.course .boxes-container .box h3 {
+    font-size: 2rem;
+    color: var(--blue-light);
+}
+
+.course .boxes-container .box p {
+    font-size: 1.5rem;
+    text-transform: initial;
+    color: #999;
+    padding: 1rem;
+}
+
+
+/* ========== Review Styling ========== */
+.review {
+    background: #f9f9f9;
+}
+
+.review .boxes-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.review .boxes-container .box {
+    width: 28rem;
+    padding-bottom: 1rem;
+    margin: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+
+    background: #FFF;
+}
+
+.review .boxes-container .box img {
+    height: 8.5rem;
+    width: 8.5rem;
+    margin-top: -4rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: .6rem solid var(--blue);
+    border-left: .6rem solid var(--blue-light);
+    border-bottom: .6rem solid var(--blue-light);
+}
+
+.review .boxes-container .box h3 {
+    font-size: 2rem;
+    color: var(--blue);
+    padding: .5rem 0;
+}
+
+.review .boxes-container .box p {
+    font-size: 1.4rem;
+    text-transform: initial;
+    color: #999;
+    padding: 0 1.3rem;
+}
+
+.review .boxes-container .box .stars i {
+    font-size: 1.6rem;
+    color: var(--blue-light);
+    padding: 1.3rem .1rem;
+}
+
+
+/* ========== Contact Styling ========== */
+.contact {
+    background: var(--dark-gray);
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.contact .row .image img {
+    width: 50vw;
+    height: 70vh;
+}
+
+.contact .row .form-container {
+    width: 50%;
+    padding-right: 6rem;
+}
+
+.contact .row .form-container input, textarea, button {
+    height: 4rem;
+    width: 100%;
+    background: #FFF;
+    border: none;
+    border-radius: .3rem;
+
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+
+    color: var(--blue);
+    font-size: 1.7rem;
+
+    transition: all 0.15s ease;
+}
+
+.contact .row .form-container input:focus, textarea:focus {
+    outline: .2rem solid var(--blue);
+}
+
+.contact .row .form-container textarea {
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .form-container button[type="submit"] {
+    width: 17rem;
+    background: var(--blue);
+    color: #FFF;
+    font-size: 2rem;
+
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.contact .row .form-container button[type="submit"]:hover {
+    background: transparent;
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+    transform: scale(1.04);
+    letter-spacing: 0.2rem;
+}
+
+
+/* ========== Footer Styling ========== */
+footer {
+    text-align: center;
+}
+
+footer .icons {
+    padding: 3rem 0;
+}
+
+footer .icons a i {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+
+    border: .2rem solid var(--blue-light);
+    border-radius: 50%;
+    color: var(--blue-light);
+
+    margin: 0 .2rem;
+    font-size: 2rem;
+
+    transition: all 0.2s ease;
+}
+
+footer .icons a:hover i {
+    color: #FFF;
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+footer .credit {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+
+    font-size: 2rem;
+    color: #666;
+    border-top: 0.15rem solid #999;
+    
+}
+
+footer .credit span {
+    color: var(--blue);
 }
 
 
@@ -384,5 +674,25 @@ header .fa-times {
     .about .row .image img {
         height: 60vh;
         width: 90vw;
+    }
+
+    /*Courses Responsividade*/
+    .course .boxes-container {
+        width: 100%;
+    }
+
+    /*Contact Responsividade*/
+    .contact .row {
+        flex-direction: column;
+    }
+
+    .contact .row .image img {
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .contact .row .form-container {
+        width: 90%;
+        padding: 0;
     }
 }

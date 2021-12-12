@@ -404,11 +404,15 @@ header .fa-times {
                 rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
     transition: all 0.2s ease;
+
+    /*To Creating a parallax effect in Vanilla Tilt*/
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
-.course .boxes-container .box:hover {
+/* .course .boxes-container .box:hover {
     transform: scale(1.04);
-}
+} */
 
 .course .boxes-container .box i {
     height: 10rem;
@@ -427,11 +431,15 @@ header .fa-times {
     border-right: 1rem solid var(--blue);
 
     box-shadow: 0 0 0 1rem #FFF inset;
+
+    transform: translateZ(1.2rem);/*Vanilla Tilt*/
 }
 
 .course .boxes-container .box h3 {
     font-size: 2rem;
     color: var(--blue-light);
+
+    /* transform: translateZ(20px);Vanilla Tilt */
 }
 
 .course .boxes-container .box p {
@@ -439,6 +447,8 @@ header .fa-times {
     text-transform: initial;
     color: #999;
     padding: 1rem;
+
+    transform: translateZ(2rem);/*Vanilla Tilt*/
 }
 
 

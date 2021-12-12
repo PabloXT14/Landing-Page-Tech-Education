@@ -349,6 +349,14 @@
     <!-- JS File Link -->
     <script src="./scripts/main.js"></script>
     <script src="./scripts/scrollRevealEffects.js"></script>
+    <script src="./scripts/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".course .boxes-container .box"), {
+            // max: 20,
+            speed: 400,
+            scale: 1.1
+        });
+    </script>
 </body>
 
 </html>

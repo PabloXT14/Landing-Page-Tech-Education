@@ -530,6 +530,7 @@ header .fa-times {
 }
 
 .contact .row .form-container input, textarea, button {
+    text-transform: none;
     height: 4rem;
     width: 100%;
     background: #FFF;

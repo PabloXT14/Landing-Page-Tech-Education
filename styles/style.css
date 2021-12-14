@@ -396,23 +396,16 @@ header .fa-times {
     margin: 3.5rem 2rem;
     text-align: center;
     border-radius: 1rem;
-    /* box-shadow: .3rem .3rem 0 .1rem var(--blue-light),
-                .5rem .5rem .5rem rgba(0,0,0,.3); */
-
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
                 rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
                 rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+    
     transition: all 0.2s ease;
 
     /*To Creating a parallax effect in Vanilla Tilt*/
     transform-style: preserve-3d;
-    perspective: 1000px;
+    transform: perspective(1000px);
 }
-
-/* .course .boxes-container .box:hover {
-    transform: scale(1.04);
-} */
 
 .course .boxes-container .box i {
     height: 10rem;
@@ -432,7 +425,7 @@ header .fa-times {
 
     box-shadow: 0 0 0 1rem #FFF inset;
 
-    transform: translateZ(1.2rem);/*Vanilla Tilt*/
+    transform: translateZ(3rem);/*Vanilla Tilt*/
 }
 
 .course .boxes-container .box h3 {
@@ -444,11 +437,11 @@ header .fa-times {
 
 .course .boxes-container .box p {
     font-size: 1.5rem;
-    text-transform: initial;
+    text-transform: none;
     color: #999;
     padding: 1rem;
 
-    transform: translateZ(2rem);/*Vanilla Tilt*/
+    /* transform: translateZ(3rem);Vanilla Tilt */
 }
 
 
@@ -621,6 +614,64 @@ footer .credit {
 footer .credit span {
     color: var(--blue);
 }
+
+
+/* ========== Page Send Email Sucess Styling ========== */
+.sucessEmailSend {
+    max-width: 37rem;
+    margin: 25vh auto;
+    padding: 2rem;
+
+    font-size: 1.6rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.sucessEmailSend p {
+    font-size: 2.5rem;
+    color: var(--blue);
+    text-transform: none;
+    text-align: center;
+
+    padding: 0 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+}
+
+.sucessEmailSend button {
+    display: block;
+    height: 4rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: 1rem;
+
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--blue);
+    color: #FFF;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.3);
+
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+
+.sucessEmailSend button:hover {
+    transform: scale(1.04);
+    letter-spacing: 0.2rem;
+}
+
+.sucessEmailSend button i {
+    margin-right: 1rem;
+}
+
 
 
 /* ========== Media Queries ========== */

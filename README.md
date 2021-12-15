@@ -3,13 +3,13 @@ Este é um projeto de uma Landing Page demonstrativa que apresenta a divulgaçã
 
 ## 📷 Demonstration
 ### FullPage
-<img src="./assets/Demonstration-Images/Demonstration-Tech_Education-FullPage.gif" alt="Imagem de demonstração projeto em fullpage">
+<img src="./assets/Demonstration-Images/Demonstration01-Tech_Education-FullPage.gif" alt="Imagem de demonstração projeto em fullpage">
 
 ### Form
-<img src="./assets/Demonstration-Images/Demonstration-Tech_Education-Form.gif" alt="Imagem de demonstração envio do formulário do projeto">
+<img src="./assets/Demonstration-Images/Demonstration02-Tech_Education-Form.gif" alt="Imagem de demonstração envio do formulário do projeto">
 
 ### Responsiveness
-<img src="./assets/Demonstration-Images/Demonstration-Tech_Education-Responsiveness.gif" alt="Imagem de demonstração responsividade do projeto">
+<img src="./assets/Demonstration-Images/Demonstration03-Tech_Education-Responsiveness.gif" alt="Imagem de demonstração responsividade do projeto">
 
 ## 💡 Inspirations
 ✔ [Canal Mr. Web Designer](https://www.youtube.com/c/MrWebDesignerAnas) - para implementação do design do site.
@@ -28,6 +28,8 @@ Este é um projeto de uma Landing Page demonstrativa que apresenta a divulgaçã
 ✔ [VanillaTilt.js](https://micku7zu.github.io/vanilla-tilt.js/) (biblioteca js para adicionar efeito de animação 3D em cards/elementos em páginas web)
 <br>
 ✔ [Fonts Awesome](https://fontawesome.com/) (biblioteca com diversos icones svg para utilizar em sites)
+<br>
+✔ [Form Submit](https://formsubmit.co/) (back-end/site online que gerencia o envio de formulários)
 <br>
 ✔ IDE: VS Code
 

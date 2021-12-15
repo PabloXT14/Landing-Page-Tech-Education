@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    text-transform: capitalize;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -32,6 +31,7 @@ html {
     font-size: 4rem;
     color: var(--blue);
     text-align: center;
+    text-transform: capitalize;
     padding: 0 1rem;
     padding-top: 6rem;
     letter-spacing: 0.2rem;
@@ -42,6 +42,7 @@ html {
     padding: 0 1rem;
     font-size: 2rem;
     text-align: center;
+    text-transform: capitalize;
     font-weight: 400;
     color: var(--text-body);
 }
@@ -285,12 +286,12 @@ header .fa-times {
 
 .about .row .content h3 {
     font-size: 3rem;
+    text-transform: capitalize;
     color: var(--blue);
 }
 
 .about .row .content p {
     font-size: 1.6rem;
-    text-transform: none;
     color: var(--text-body);
     padding: 1rem 0;
 }
@@ -430,6 +431,7 @@ header .fa-times {
 
 .course .boxes-container .box h3 {
     font-size: 2rem;
+    text-transform: capitalize;
     color: var(--blue-light);
 
     /* transform: translateZ(20px);Vanilla Tilt */
@@ -437,7 +439,6 @@ header .fa-times {
 
 .course .boxes-container .box p {
     font-size: 1.5rem;
-    text-transform: none;
     color: var(--text-body);
     padding: 1rem;
 
@@ -488,7 +489,6 @@ header .fa-times {
 
 .review .boxes-container .box p {
     font-size: 1.4rem;
-    text-transform: initial;
     color: var(--text-body);
     padding: 0 1.3rem;
 }
@@ -523,7 +523,6 @@ header .fa-times {
 }
 
 .contact .row .form-container input, textarea, button {
-    text-transform: none;
     height: 4rem;
     width: 100%;
     background: #FFF;
@@ -606,6 +605,7 @@ footer .credit {
     padding: 1rem 0;
 
     font-size: 2rem;
+    text-transform: capitalize;
     color: var(--text-body);
     border-top: 0.15rem solid var(--text-body);
     

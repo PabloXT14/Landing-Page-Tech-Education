@@ -9,14 +9,14 @@
 }
 
 :root {
-    --blue: #5429cc;
-    --blue-light: #a98df5;
+    --blue: #3F1F99;
+    --blue-light: #B094FF;
     
     --green: #33cc95;
     --dark-gray: #121214;
 
     --text-title: #363F5F;
-    --text-body: #EEE;
+    --text-body: #666;
 }
 
 body {
@@ -43,7 +43,7 @@ html {
     font-size: 2rem;
     text-align: center;
     font-weight: 400;
-    color: #aaa;
+    color: var(--text-body);
 }
 
 
@@ -134,7 +134,7 @@ header .fa-times {
 .home {
     min-height: 100vh;
     background: 
-        linear-gradient(to bottom, rgba(84, 41, 204, .8), rgba(169, 141, 245, .8)),
+        linear-gradient(to bottom, rgba(63, 31, 153, .8), rgba(176, 148, 255, .8)),
         url(../assets/bg.jpg),
         no-repeat;
 
@@ -171,7 +171,7 @@ header .fa-times {
 .home .content p {
     font-size: 2rem;
     text-transform: none;
-    color: var(--text-body);
+    color: #eee;
     padding: 1rem 25rem;
 }
 
@@ -231,7 +231,7 @@ header .fa-times {
     transition: all 0.2s ease;
 }
 
-.home .box-container .box h3 {
+.home .box-container .box h2 {
     font-size: 2rem;
     text-transform: capitalize;
     color: var(--blue);
@@ -242,7 +242,7 @@ header .fa-times {
     font-size: 1.3rem;
     text-transform: none;
     padding: 0.7rem 2rem;
-    color: #666;
+    color: var(--text-body);
 }
 
 .home .box-container .box:hover i {
@@ -291,7 +291,7 @@ header .fa-times {
 .about .row .content p {
     font-size: 1.6rem;
     text-transform: none;
-    color: #999;
+    color: var(--text-body);
     padding: 1rem 0;
 }
 
@@ -364,7 +364,7 @@ header .fa-times {
 
 .teacher .cards-container .card p {
     font-size: 1.7rem;
-    color: #666;
+    color: var(--text-body);
 }
 
 .teacher .cards-container .card .icons a {
@@ -438,7 +438,7 @@ header .fa-times {
 .course .boxes-container .box p {
     font-size: 1.5rem;
     text-transform: none;
-    color: #999;
+    color: var(--text-body);
     padding: 1rem;
 
     /* transform: translateZ(3rem);Vanilla Tilt */
@@ -489,7 +489,7 @@ header .fa-times {
 .review .boxes-container .box p {
     font-size: 1.4rem;
     text-transform: initial;
-    color: #999;
+    color: var(--text-body);
     padding: 0 1.3rem;
 }
 
@@ -606,8 +606,8 @@ footer .credit {
     padding: 1rem 0;
 
     font-size: 2rem;
-    color: #666;
-    border-top: 0.15rem solid #999;
+    color: var(--text-body);
+    border-top: 0.15rem solid var(--text-body);
     
 }
 

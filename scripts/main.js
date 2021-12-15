@@ -208,10 +208,10 @@ function loadingDatas() {
             <h3>${teacher.teacherName}</h3>
             <p>${teacher.description}</p>
             <div class="icons">
-                <a href="${teacher.socialMediasLinks.facebook}" class="fab fa-facebook-f" target="_blank"></a>
-                <a href="${teacher.socialMediasLinks.twitter}" class="fab fa-twitter" target="_blank"></a>
-                <a href="${teacher.socialMediasLinks.instagram}" class="fab fa-instagram" target="_blank"></a>
-                <a href="${teacher.socialMediasLinks.github}" class="fab fa-github" target="_blank"></a>
+                <a href="${teacher.socialMediasLinks.facebook}" class="fab fa-facebook-f" target="_blank" title="link facebook" rel="noopener"></a>
+                <a href="${teacher.socialMediasLinks.twitter}" class="fab fa-twitter" target="_blank" title="link twitter" rel="noopener"></a>
+                <a href="${teacher.socialMediasLinks.instagram}" class="fab fa-instagram" target="_blank" title="link instagram" rel="noopener"></a>
+                <a href="${teacher.socialMediasLinks.github}" class="fab fa-github" target="_blank" title="link github" rel="noopener"></a>
             </div>
         </div>
         `

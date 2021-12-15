@@ -2,7 +2,14 @@
 Este é um projeto de uma Landing Page demonstrativa que apresenta a divulgação de uma plataforma de ensino remoto sobre programação (fictícia), com planos especiais para alunos do ensino público.
 
 ## 📷 Demonstration
-<img src="./assets/Demonstration-Images/Demonstration-Tech-Education.jpg" alt="Imagem de Demonstração">
+### FullPage
+<img src="./assets/Demonstration-Images/Demonstration-Tech_Education-FullPage.gif" alt="Imagem de demonstração projeto em fullpage">
+
+### Form
+<img src="./assets/Demonstration-Images/Demonstration-Tech_Education-Form.gif" alt="Imagem de demonstração envio do formulário do projeto">
+
+### Responsiveness
+<img src="./assets/Demonstration-Images/Demonstration-Tech_Education-Responsiveness.gif" alt="Imagem de demonstração responsividade do projeto">
 
 ## 💡 Inspirations
 ✔ [Canal Mr. Web Designer](https://www.youtube.com/c/MrWebDesignerAnas) - para implementação do design do site.
